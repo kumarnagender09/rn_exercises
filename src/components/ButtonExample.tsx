@@ -20,6 +20,7 @@ export default function ButtonExample() {
 
       {/* Step 4: button to trigger the change */}
       <Button title="Press Here" onPress={handlePress} />
+      {/* Step 5: button to trigger the reset */}
       <Button title="Reset" onPress={handleReset} />
     </View>
   );
