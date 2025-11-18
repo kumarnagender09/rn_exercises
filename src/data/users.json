@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "role": "Mobile Developer",
+    "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Smith",
+    "role": "UI/UX Designer",
+    "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "James Wilson",
+    "role": "Backend Engineer",
+    "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+  },
+    {
+    "id": 4,
+    "name": "James Wilson",
+    "role": "Backend Engineer",
+    "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+  },
+    {
+    "id": 5,
+    "name": "James Wilson",
+    "role": "Backend Engineer",
+    "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+  },
+  
+]

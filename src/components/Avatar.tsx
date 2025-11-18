@@ -13,11 +13,12 @@ export default function Avatar({
 
 const styles = StyleSheet.create({
   avatar: {
-    padding: 50,
     borderRadius: 40,
     borderColor: 'red',
-    borderWidth:10,
+    borderWidth:5,
     verticalAlign: 'middle',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   image: {
     width: '100%',
