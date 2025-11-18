@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, Alert } from 'react-native';
+import Button from './Button';
 
 interface User {
   id: number;
@@ -13,10 +14,11 @@ export default function UserCard({ user }: { user: User }) {
     <View style={styles.card}>
       <Image source={{ uri: user.avatar }} style={styles.avatar} />
 
-      <View>
+      <View style={{ flex: 1, marginRight: 10 }}>
         <Text style={styles.name}>{user.name}</Text>
-        <Text style={styles.role}>{user.role}</Text>
+        {/* <Text style={styles.role}>{user.role}</Text> */}
       </View>
+      <Button label="Info" onPress={() => Alert.alert(`I am a ${user.role}`)} />
     </View>
   );
 }
