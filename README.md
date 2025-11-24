@@ -70,6 +70,24 @@ Open `App.tsx` in your text editor of choice and make some changes. When you sav
 
 When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
 
+## Project Folder Structure
+src/
+  api/
+    client.ts
+    posts.api.ts
+  components/
+    PostItem.tsx
+  screens/
+    HomeScreen.tsx
+    DetailsScreen.tsx
+  navigation/
+    AppNavigator.tsx
+  types/
+    Post.ts
+  utils/
+    index.ts
+App.tsx
+
 - **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
 - **iOS**: Press <kbd>R</kbd> in iOS Simulator.
 
