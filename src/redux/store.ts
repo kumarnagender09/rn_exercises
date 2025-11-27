@@ -2,6 +2,7 @@
 // This is the recommended way to create a Redux store because
 // it automatically sets up good defaults (middleware, devTools, etc.)
 import { configureStore } from '@reduxjs/toolkit';
+import logger from 'redux-logger'; // optional
 
 // Importing reducers from each slice of our application.
 // Each slice manages a specific feature state.
@@ -22,11 +23,12 @@ import tasksReducer from './slices/tasksSlice';
 // }
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,   // state.counter → managed by counterSlice
-    profile: profileReducer,   // state.profile → managed by profileSlice
-    theme: themeReducer,       // state.theme → managed by themeSlice
-    tasks: tasksReducer,       // state.tasks → managed by tasksSlice
+    counter: counterReducer, // state.counter → managed by counterSlice
+    profile: profileReducer, // state.profile → managed by profileSlice
+    theme: themeReducer, // state.theme → managed by themeSlice
+    tasks: tasksReducer, // state.tasks → managed by tasksSlice
   },
+  middleware: getDefaultMiddleware => getDefaultMiddleware().concat(logger),
 });
 
 // Type for the entire Redux state.
